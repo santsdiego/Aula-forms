@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faculdade - Matrícula</title>
+        <link rel="stylesheet" href="css/placeholder-required.css">
+    </head>
+
+    <body>
+        <header>
+            <strong>Faculdade</strong>
+        </header>
+
+        <main>
+            <h1>Matrícula</h1>
+            <p>Preencha os campos para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade.</p>
+
+            <form action="https://www.devmedia.com.br/codigos/formularios/aula3/">
+                <label>Nome:</label>
+                <input placeholder="Digite seu nome:" type="text" name="nome" required>
+
+                <label>Data de Nacimento:</label>
+                <input type="date" name="data_nascimento" max="2004-03-01" required>
+
+                <label>Email:</label>
+                <input placeholder="Digite seu email" type="email" name="email" required>
+
+                <label>Telefone:</label>
+                <input placeholder="(xx) 9xxxx-xxxx" type="tel" name="telefone" required minlegnth="14">
+
+                <label>Melhor dia para vencimento:</label>
+                <input placeholder="Valores entre 10 e 20" type="number" name="dia_vencimento" required minlength="10" maxlength="20">
+
+                <label>Login:</label>
+                <input placeholder="Digite seu login" type="text" name="login" minlength="3">
+
+                <label>Senha:</label>
+                <input placeholder="Digite sua senha" type="password" name="senha" minlength="4" maxlength="8" required>
+
+                <button type="submit">Enviar Matrícula</button>
+            </form>
+        </main>
+
+        <footer>
+            Copywright 2025 - Faculdade
+        </footer>
+    </body>
+</html>
