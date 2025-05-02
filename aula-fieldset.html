@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula de Fieldset</title>
+        <link rel="stylesheet" href="css/fieldset.css">
+    </head>
+
+    <body>
+        <header>
+            Revista
+        </header>
+
+        <main>
+            <h1>Cadastro</h1>
+            <p>Estamos lançando uma nova revista eenviamos o primeiro exemplar grátis para todos que se cadastrarem hoje no site.</p>
+
+            <form action="https://www.devmedia.com.br/codigos/formularios/aula8/">
+                <fieldset>
+                    <legend>Dados de Contato</legend>
+
+                    <label>Nome:</label>
+                    <input type="text" name="nome" required placeholder="Digite seu nome">
+
+                    <label>Email:</label>
+                    <input type="email" name="email" required placeholder="Digite o seu email">
+
+                    <label>Telefone:</label>
+                    <input type="tel" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados de Entrega</legend>
+
+                    <label>Endereço:</label>
+                    <input type="text" name="endereco" required placeholder="Rua, Avenida, Travessa...">
+
+                    <label>Número da Residência:</label>
+                    <input type="number" name="numero">
+
+                    <label>Complemento:</label>
+                    <input type="text" name="complemento">
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </main>
+
+        <footer>
+            &copy; 2025 - Sant's Diego
+        </footer>
+    </body>
+</html>
