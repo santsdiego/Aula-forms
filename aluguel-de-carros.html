@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alucar - Aluguel de Carros</title>
+        <link rel="stylesheet" href="css/aluguel-carros.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Alucar</h1>
+
+            <nav>
+                <a href="#">Carros</a>
+                <a href="#">Nossos Serviços</a>
+                <a href="#">Falar com Consultor</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="hero">
+                    <h2>Alucar<br>Aluguel de Carros</h2>
+                </div>
+            </section>
+            
+            <section>
+                <div class="container secao-sobre">
+                    <h3>Sobre Nós</h3>
+                    <p>
+                        Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. 
+                        Temos os melhores preços e modelos do mercado.
+                    </p>
+
+                    <div class="galeria-carros">
+                        <figure>
+                            <img src="assets/img1.jpg" alt="Fiat Uno">
+                        </figure>
+                        <figure>
+                            <img src="assets/img2.jpg" alt="Caminhonete Nissan">
+                        </figure>
+                        <figure>
+                            <img src="assets/img3.jpg" alt="Wolkswagem Fox">
+                        </figure>
+                    </div>
+                    <p>O compromisso da AluCar é com a qualidade.</p>
+                    <p>Os melhores carros estão aqui!</p>
+                    <p>Assistência 24hrs.</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Contato</h3>
+            </section>
+
+            <section>
+                <h4>Análise de Cadastro</h4>
+
+                <p>
+                    Preencha os campos abaixo e analisaremos seus dados.
+                    Se tudo estiver correto ligaremos para marcar uma visita sua à loja.
+                </p>
+
+                <form action="https://www.devmedia.com.br/codigos/formularios/aula9/">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+
+                        <label>Nome</label>
+                        <input type="text" name="nome" required placeholder="digite seu nome">
+
+                        <label>Data de Nascimento</label>
+                        <input type="date" name="data_nascimento" required>
+
+                        <label>Telefone</label>
+                        <input type="number" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+                    </fieldset>  
+                    
+                    <fieldset>
+                        <legend>CNH</legend>
+                        
+                        <label>Número de Registro</label>
+                        <input type="number" name="numero_cnh" required placeholder="Informe o número da sua CNH">
+
+                        <label>Validade</label>
+                        <input type="date" name="data_validade" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Modelo do Veículo</legend>
+
+                        <div class="grupo-campo">
+                            <label>Veículo</label>
+                            <select name="carro">
+                                <option value="">Escolha um carro</option>
+
+                                <optgroup label="Volkswagem">
+                                    <option value="gol">Gol</option>
+                                    <option value="golf">Golf</option>
+                                    <option value="fox">Fox</option>
+                                </optgroup>
+
+                                <optgroup label="Fiat">
+                                    <option value="uno">Uno</option>
+                                    <option value="siena">Siena</option>
+                                    <option value="Palio">Palio</option>
+                                </optgroup>
+
+                                <optgroup label="Nissan">
+                                    <option value="frontier">Frontier</option>
+                                    <option value="versa">Versa</option>
+                                    <option value="skyline">Skyline GT-R</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Enviar Dados</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2025 - Sants Diego.
+        </footer>
+        
+    </body>
+</html>
