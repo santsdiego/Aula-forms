@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alucar - Aluguel de Carros</title>
-        <link rel="stylesheet" href="css/aluguel-carros.css">
+        <link rel="stylesheet" href="css/aluguel-carros.css" type="text/css">
     </head>
 
     <body>
-        <header>
-            <h1>Alucar</h1>
+        <header class="secao-topo">
+            <p class="secao-largura-limitada">Alucar</p>
 
             <nav>
                 <a href="#">Carros</a>
@@ -19,42 +19,39 @@
         </header>
 
         <main>
-            <section>
-                <div class="hero">
-                    <h2>Alucar<br>Aluguel de Carros</h2>
+            <section class="secao-background-capa">
+                <div class="secao-background-conteudo">
+                    <div class="secao-largura-limitada">
+                       <h1>Alucar</h1> 
+                       <h2>Aluguel de Carros</h2>
+                    </div>
+                    
                 </div>
             </section>
             
-            <section>
-                <div class="container secao-sobre">
+            <section class="secao-largura-limitada secao-conteudo">
+                <div>
                     <h3>Sobre Nós</h3>
                     <p>
                         Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. 
                         Temos os melhores preços e modelos do mercado.
                     </p>
 
-                    <div class="galeria-carros">
-                        <figure>
-                            <img src="assets/img1.jpg" alt="Fiat Uno">
-                        </figure>
-                        <figure>
-                            <img src="assets/img2.jpg" alt="Caminhonete Nissan">
-                        </figure>
-                        <figure>
-                            <img src="assets/img3.jpg" alt="Wolkswagem Fox">
-                        </figure>
-                    </div>
-                    <p>O compromisso da AluCar é com a qualidade.</p>
-                    <p>Os melhores carros estão aqui!</p>
-                    <p>Assistência 24hrs.</p>
+                    <img class="img-conteudo" src="assets/img1.jpg" alt="Fiat Uno">
+                    <img class="img-conteudo" src="assets/img2.jpg" alt="Caminhonete Nissan">
+                    <img class="img-conteudo" src="assets/img3.jpg" alt="Wolkswagem Fox">
+
+                    <p><span>O compromisso da AluCar é com a qualidade.</span></p>
+                    <p><span>Os melhores carros estão aqui!</span></p>
+                    <p><span>Assistência 24hrs.<span></p>
                 </div>
             </section>
 
-            <section>
+            <section class="secao-background-divisao">
                 <h3>Contato</h3>
             </section>
 
-            <section>
+            <section class="secao-largura-limitada secao-conteudo">
                 <h4>Análise de Cadastro</h4>
 
                 <p>
@@ -66,24 +63,35 @@
                     <fieldset>
                         <legend>Dados Pessoais</legend>
 
-                        <label>Nome</label>
-                        <input type="text" name="nome" required placeholder="digite seu nome">
+                        <div class="grupo-campo">
+                            <label>Nome</label>
+                            <input type="text" name="nome" required placeholder="digite seu nome">
+                        </div>
 
-                        <label>Data de Nascimento</label>
-                        <input type="date" name="data_nascimento" required>
+                        <div class="grupo-campo">
+                            <label>Data de Nascimento</label>
+                            <input type="date" name="data_nascimento" required>
+                        </div>
 
-                        <label>Telefone</label>
-                        <input type="number" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+                        <div class="grupo-campo">
+                            <label>Telefone</label>
+                            <input type="number" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+                        </div>
                     </fieldset>  
                     
                     <fieldset>
                         <legend>CNH</legend>
                         
-                        <label>Número de Registro</label>
-                        <input type="number" name="numero_cnh" required placeholder="Informe o número da sua CNH">
+                        <div class="grupo-campo">
+                            <label>Número de Registro</label>
+                            <input type="number" name="numero_cnh" required placeholder="Informe o número da sua CNH">
+                        </div>
 
-                        <label>Validade</label>
-                        <input type="date" name="data_validade" required>
+                        <div class="grupo-campo">
+                            <label>Validade</label>
+                            <input type="date" name="data_validade" required>
+                        </div>
+                        
                     </fieldset>
 
                     <fieldset>
